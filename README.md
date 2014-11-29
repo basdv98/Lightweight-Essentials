@@ -1,4 +1,4 @@
-PermissionsOS
+Lightweight Essentials
 =============
 
-An easy bukkit permissions management plugin.
+A Leightweight Essential bukkit plugin
