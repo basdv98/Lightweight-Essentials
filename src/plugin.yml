@@ -1,0 +1,206 @@
+name: Lightweight Essentials
+version: 3.0
+main: com.basdv98.plugins.lightweightessentials.main
+author: basdv98
+description: A plugin with usefull server tools!
+
+commands:
+     essentials:
+         usage: /<command> [help|reload|update]
+         description: View all lightweight essentials commands / subcommands.
+         aliases: [le,ess]
+     kick:
+         usage: /<command> <player>
+         description: kick someone.
+     ban:
+         usage: /<command> <player>
+         description: ban someone.
+     clearchat:
+         usage: /<command>
+         description: Cleares your chat.
+         aliases: [cc]
+     heal:
+         usage: /<command> [player]
+         aliases: [health, givehealth]
+         description: Heals yourself or others.
+     kill:
+         usage: /<command> [player]
+         description: Kills yourself or others.
+     feed:
+         usage: /<command> [player]
+         aliases: [food, sate, eat]
+         description: Feeds yourself or others.
+     tp:
+         usage: /<command> <player>
+         aliases: [teleport]
+         description: Teleport to other players.
+     tphere:
+         usage: /<command> <player>
+         aliases: [teleporthere]
+         description: Teleport other players to you.
+     setspawn:
+         usage: /<command>
+         description: Set the spawn.
+     spawn:
+         usage: /<command>
+         description: Teleport to the spawn.
+     clearinventory:
+         usage: /<command> [player]
+         description: Cleares your inventory.
+         aliases: [ci, clear, clearinv, clean]
+     motd:
+         usage: /<command>
+         description: View the MOTD
+     setmotd:
+         usage: /<command> <motd>
+         description: Set the MOTD
+     setwarp:
+         usage: /<command> <warp>
+         description: Set a warp.
+     warp:
+         usage: /<command> <warp>
+         description: Teleport to a warp.
+     delwarp:
+         usage: /<command> <warp>
+         description: Delete a warp.
+     burn:
+         usage: /<command> [player]
+         aliases: [ignite, fire]
+         description: Ignite yourself or others.
+     msg:
+         usage: /<command> <to> <message>
+         aliases: [message, pm, tell, whisper]
+         description: Message someone.
+     broadcast:
+         usage: /<command> <message>
+         aliases: [bc, cast]
+         description: Broadcast a message to everyone.
+     sethome:
+         usage: /<command>
+         aliases: []
+         description: Set your home.
+     home:
+         usage: /<command>
+         aliases: []
+         description: Teleport to your home.
+     delhome:
+         usage: /<command>
+         aliases: []
+         description: Remove your home.
+     ping:
+         usage: /<command>
+         aliases: []
+         description: Get a pong from the server to test your connection.
+         
+permissions:
+    lightweightessentials.*:
+        description: All Lightweight Essentials Commands
+        children:
+            lightweightessentials.reload: true
+            lightweightessentials.updatenotify: true
+            lightweightessentials.update: true
+            lightweightessentials.help: true
+            lightweightessentials.kick: true
+            lightweightessentials.ban: true
+            lightweightessentials.clearchat: true
+            lightweightessentials.heal: true
+            lightweightessentials.kill: true
+            lightweightessentials.feed: true
+            lightweightessentials.tp: true
+            lightweightessentials.tphere: true
+            lightweightessentials.setspawn: true
+            lightweightessentials.spawn: true
+            lightweightessentials.clearinventory: true
+            lightweightessentials.motd: true
+            lightweightessentials.setmotd: true
+            lightweightessentials.setwarp: true
+            lightweightessentials.warp: true
+            lightweightessentials.delwarp: true
+            lightweightessentials.burn: true
+            lightweightessentials.msg: true
+            lightweightessentials.broadcast: true
+            lightweightessentials.sethome: true
+            lightweightessentials.home: true
+            lightweightessentials.delhome: true
+            lightweightessentials.ping: true
+    lightweightessentials.reload:
+                description: Reload the Lightweight Essentials config and data files.
+                default: op
+    lightweightessentials.updatenotify:
+                description: Get an ingame notification if there is a Lightweight Essentials update available.
+                default: op
+    lightweightessentials.update:
+                description: Automatically update Lightweight Essentials.
+                default: op
+    lightweightessentials.help:
+                description: Use the Lightweight Essentials help command to view the Lightweight Essentials commands.
+                default: op
+    lightweightessentials.kick:
+                description: Use the kick command to kick someone.
+                default: op
+    lightweightessentials.ban:
+                description: Use the ban command to ban someone.
+                default: op
+    lightweightessentials.clearchat:
+                description: Use the clearchat command to clear your chat.
+                default: op
+    lightweightessentials.heal:
+                description: Use the heal command to heal.
+                default: op
+    lightweightessentials.kill:
+                description: Use the kill command to kill.
+                default: op
+    lightweightessentials.feed:
+                description: Use the feed command to feed.
+                default: op
+    lightweightessentials.tp:
+                description: Use the tp command to teleport to people.
+                default: op
+    lightweightessentials.tphere:
+                description: Use the tphere command to teleport people to you.
+                default: op
+    lightweightessentials.setspawn:
+                description: Use the setspawn command to set the spawn.
+                default: op
+    lightweightessentials.spawn:
+                description: Use the spawn command to teleport to spawn.
+                default: op
+    lightweightessentials.clearinventory:
+                description: Use the clearinventory command to clear your inventory.
+                default: op
+    lightweightessentials.motd:
+                description: Use the motd command to view the MOTD.
+                default: op
+    lightweightessentials.setmotd:
+                description: Use the setmotd command to set the MOTD.
+                default: op
+    lightweightessentials.setwarp:
+                description: use the setwarp command to set a warp.
+                default: op
+    lightweightessentials.warp:
+                description: Use the warp command to teleport to a warp.
+                default: op
+    lightweightessentials.delwarp:
+                description: Use the delwarp command to delete a warp.
+                default: op
+    lightweightessentials.burn:
+                description: Use the burn command to ignite someone.
+                default: op
+    lightweightessentials.msg:
+                description: Use the msg command to message to someone.
+                default: op
+    lightweightessentials.broadcast:
+                description: Use the broadcast command to broadcast.
+                default: op
+    lightweightessentials.sethome:
+                description: Use the sethome command to set your home.
+                default: op
+    lightweightessentials.home:
+                description: Use the home command to teleport to your home.
+                default: op
+    lightweightessentials.delhome:
+                description: Use the delhome command to remove your home.
+                default: op
+    lightweightessentials.ping:
+                description: Use the ping command to test your connection.
+                default: op

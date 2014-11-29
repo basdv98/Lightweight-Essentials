@@ -1,0 +1,34 @@
+# Enable / Disable Commands! true = Enabled & false = Disabled.
+enable:
+    ban: true
+    kick: true
+    clearchat: true
+    heal: true
+    feed: true
+    tp: true
+    tphere: true
+    setspawn: true
+    spawn: true
+    clearinventory: true
+    motd: true
+    setmotd: true
+    setwarp: true
+    warp: true
+    delwarp: true
+    kill: true
+    burn: true
+    msg: true
+    broadcast: true
+    sethome: true
+    home: true
+    delhome: true
+    ping: true
+
+# MOTD on join, set to false if you do not want to show the MOTD to people when they join.
+onjoinmotd: true  
+
+# Set the MOTD Text
+motd: Welcome to The Server!
+
+# Any update related thing, update checking, auto updating.. etc. can be disabled by setting this to false.
+update: true
