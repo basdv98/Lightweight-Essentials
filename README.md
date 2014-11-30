@@ -1,4 +1,4 @@
 Lightweight Essentials
 =============
 
-A Leightweight Essential bukkit plugin
+A Leightweight Essential bukkit plugin.
